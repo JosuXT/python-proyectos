@@ -1,32 +1,19 @@
 """
-Ejercicio 2
-Escribir un programa que pregunte el nombre completo del usuario en la consola y
-después muestre por pantalla el nombre completo del usuario tres veces, una con
-todas las letras minúsculas, otra con todas las letras mayúsculas y otra solo con la
-primera letra del nombre y de los apellidos en mayúscula. El usuario puede
-introducir su nombre combinando mayúsculas y minúsculas como quiera.
+Ejercicio_3
+Escribir un programa que pregunte el nombre del usuario en la consola y después
+de que el usuario lo introduzca muestre por pantalla <NOMBRE> tiene <n>
+letras, donde <NOMBRE> es el nombre de usuario en mayúsculas y <n> es el
+número de letras que tienen el nombre.
+
 """
-nombre_completo = input("coloca el nombre completo: ")
-##print (nombre_completo)
-numero = 3
+
+# Pedimos el nombre
+nombre = input("¿Cuál es tu nombre? ")
+
+# mayusculas
+nombre_mayus = nombre.upper()
 
 
-print ("NORMAL")
-for i in range(numero):
-    print (nombre_completo)
-print()   
+cantidad_letras = len(nombre)
 
-print ("minuscula")
-for i in range(numero):
-    print (nombre_completo.lower())
-
-print()   
-
-print ("Mayuscula")
-for i in range(numero):
-    print(nombre_completo.upper())
-print() 
-
-print ("Primera letra Mayuscula")
-for i in range(numero):
-    print(nombre_completo.title())
+print(f"{nombre_mayus} tiene {cantidad_letras} letras.")
