@@ -1,16 +1,14 @@
 
 """
-Ejercicio 1
-Escribir un programa que pida al usuario una palabra y la muestre por pantalla 10
-veces.
+Ejercicio_1_condicionales
+Escribir un programa que pregunte al usuario su edad y muestre por pantalla si es
+mayor de edad o no.
 
 """
 
-palabra = input("introduce tu palabra ")
+edad = int(input("Introduce tu edad: "))
 
-
-num=1  
-
-while num <= 10:
-    print(palabra)
-    num += 1
+if edad < 18:
+    print("Eres menor de edad")
+else:
+    print("Eres mayor de edad")
