@@ -81,7 +81,7 @@ while True:
         print("Opción no válida")
 
 """
-
+"""
 #tabla de multiplicar
           
 for a in range (1,11):
@@ -116,7 +116,74 @@ for i in range(1, num + 1):
     # Salto de línea al terminar la fila
     print()
 
+print ("Siguiente bucle")
+
+for i in range (1, num + 1, 1):
+    for j in range (i, num + 1, 1):
+        print(j, end=" ")
+    print()
+
+for ancho in range(1, num + 1, 1):
+    for alto in range(num):
+        print("*", end=" ")
+    print()
 
 
-        
+
+
+
+
+
+
+
+
+
+
+
+
+print("--")
+for i in range(1, num+1, 1):
+    for b in range(i, 0, -1):
+        print(b, end=" ")
+    print()
+
+
+
+cadena = str(input("Introduce una cadena: "))
+
+for i in range(1, len(cadena) + 1 , 1):
+    print(cadena[0:i ])
+"""
+
+
+"""
+
+
+Ejercicio 20: contar con for e if (más fácil)
+
+Enunciado: Pide al usuario una palabra y 
+cuenta cuántas veces aparece la letra a (da igual si es mayúscula o minúscula).
+
+Ejemplo con Banana:
+
+La letra a aparece 3 veces
+Conceptos clave
+for letra in palabra: recorre la palabra letra a letra.
+if letra == "a": comprueba si esa letra es la que buscas.
+Contador: empieza en 0 antes del bucle y suma 1 cada vez que acierta.
+.lower() al leer la palabra hace que A y a cuenten igual.
+"""
+
+"""
+palabra = input("Introduce la palabra: ").lower()
+contador = 0
+
+for letra in palabra:
+    if letra == "a":
+        contador += 1
+
+print(f"La letra a aparece {contador} veces")
+
+
+"""
 
