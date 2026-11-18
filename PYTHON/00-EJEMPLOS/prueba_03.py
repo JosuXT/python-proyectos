@@ -116,6 +116,10 @@ for i in range(1, num + 1):
     # Salto de línea al terminar la fila
     print()
 
+    
+
+
+    
 print ("Siguiente bucle")
 
 for i in range (1, num + 1, 1):
@@ -186,4 +190,3 @@ print(f"La letra a aparece {contador} veces")
 
 
 """
-
